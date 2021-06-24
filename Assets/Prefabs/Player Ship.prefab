@@ -176,9 +176,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlSpeed: 20
-  xRange: 9.5
-  yTopLimit: 11
-  yBottomLimit: -3
+  xRange: 13
+  yTopLimit: 14
+  yBottomLimit: -4
+  positionXRotationFactor: -2
+  controlXRotationFactor: -10
+  yRotationFactor: 1.5
+  zRotationFactor: -20
 --- !u!1 &6736003877232482788
 GameObject:
   m_ObjectHideFlags: 0
