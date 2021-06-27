@@ -2,10 +2,12 @@
 
 public class PlayerControls : MonoBehaviour
 {
-    [SerializeField] private float controlSpeed = 20f;
-    [SerializeField] private float xRange = 9.5f;
-    [SerializeField] private float yTopLimit = 12f;
-    [SerializeField] private float yBottomLimit = -4f;
+    [Header("General Setup Settings")]
+    [Tooltip("How fast the ship moves")][SerializeField] private float controlSpeed = 20f;
+    [Tooltip("How far the player moves horizontally")][SerializeField] private float xRange = 9.5f;
+    [Tooltip("Max vertical limit")][SerializeField] private float yTopLimit = 12f;
+    [Tooltip("Min vertical limit")][SerializeField] private float yBottomLimit = -4f;
+    [SerializeField] private ParticleSystem[] lasers;
 
     [Header("Rotation")]
     [SerializeField] private float positionXRotationFactor = -2f;
@@ -21,6 +23,7 @@ public class PlayerControls : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
     private void ProcessTranslation()
@@ -48,5 +51,14 @@ public class PlayerControls : MonoBehaviour
 
         var zRotation = _xThrow * zRotationFactor;
         transform.localRotation = Quaternion.Euler(xRotation, yRotation, zRotation);
+    }
+
+    private void ProcessFiring()
+    {
+        foreach (var laser in lasers)
+        {
+            var emissionModule = laser.emission;
+            emissionModule.enabled = Input.GetButton("Fire1");
+        }
     }
 }
