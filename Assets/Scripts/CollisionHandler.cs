@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] private float levelLoadDelay = 1f;
+    [SerializeField] private ParticleSystem crashVFX;
 
     private bool _isTransitioning = false;
 
@@ -20,7 +21,8 @@ public class CollisionHandler : MonoBehaviour
     private void StartCrashSequence()
     {
         _isTransitioning = true;
-        print("Crash");
+        crashVFX.Play();
+        GetComponent<MeshRenderer>().enabled = false;
         GetComponent<PlayerControls>().enabled = false;
         Invoke(nameof(ReloadLevel), levelLoadDelay);
     }
