@@ -21,6 +21,7 @@ public class CollisionHandler : MonoBehaviour
     private void StartCrashSequence()
     {
         _isTransitioning = true;
+        FindObjectOfType<PlayerControls>().StopFiring();
         crashVFX.Play();
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<PlayerControls>().enabled = false;

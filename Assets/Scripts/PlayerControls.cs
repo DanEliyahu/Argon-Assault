@@ -61,4 +61,13 @@ public class PlayerControls : MonoBehaviour
             emissionModule.enabled = Input.GetButton("Fire1");
         }
     }
+
+    public void StopFiring()
+    {
+        foreach (var laser in lasers)
+        {
+            var emissionModule = laser.emission;
+            emissionModule.enabled = false;
+        }
+    }
 }
