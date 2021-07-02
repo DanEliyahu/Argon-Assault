@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6807007220694957931}
   - component: {fileID: 6796659106713017695}
   - component: {fileID: 389440840864269243}
+  - component: {fileID: 6591872563705428986}
   m_Layer: 0
   m_Name: Black Ship
   m_TagString: Untagged
@@ -99,8 +100,20 @@ MonoBehaviour:
   hitPoints: 6
   deathVFX: {fileID: 3200836327345539236, guid: 4ea8d05610959723caded47fb579f160, type: 3}
   hitVFX: {fileID: 3200836327345539236, guid: c863f0dbc4480e8eebabc56dc6d1feaf, type: 3}
-  parent: {fileID: 0}
   timeToVfxDestroy: 2
+--- !u!65 &6591872563705428986
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774603340099753483}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.865558, y: 4.241986, z: 11.309124}
+  m_Center: {x: 0.00000047683716, y: -0.000006198883, z: -0.0000011920929}
 --- !u!1 &6774620963014061177
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,7 +393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6777843875830316901
 Transform:
   m_ObjectHideFlags: 0

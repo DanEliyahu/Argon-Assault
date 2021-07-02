@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 1254674382814389205}
   - component: {fileID: 1246060650339895025}
   - component: {fileID: 2553400942043683274}
+  - component: {fileID: -6014169970722337155}
   m_Layer: 0
   m_Name: Purple Ship
   m_TagString: Untagged
@@ -187,8 +188,20 @@ MonoBehaviour:
   hitPoints: 6
   deathVFX: {fileID: 3200836327345539236, guid: 4ea8d05610959723caded47fb579f160, type: 3}
   hitVFX: {fileID: 3200836327345539236, guid: c863f0dbc4480e8eebabc56dc6d1feaf, type: 3}
-  parent: {fileID: 0}
   timeToVfxDestroy: 2
+--- !u!65 &-6014169970722337155
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232692072393310049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.2209473, y: 3.4400399, z: 13.842939}
+  m_Center: {x: 0, y: -0.0000104904175, z: 0}
 --- !u!1 &1232702752749752243
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1230030578105799313
 Transform:
   m_ObjectHideFlags: 0

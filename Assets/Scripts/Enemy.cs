@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     {
         _scoreBoard = FindObjectOfType<ScoreBoard>();
         _parent = GameObject.FindWithTag("SpawnAtRuntime").transform;
-        AddRigidBody();
+        //AddRigidBody();
     }
 
     private void AddRigidBody()

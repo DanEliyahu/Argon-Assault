@@ -103,7 +103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3305775625359192656
 Transform:
   m_ObjectHideFlags: 0
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 3286168167708724434}
   - component: {fileID: 3295721664803184162}
   - component: {fileID: 4998055057467548945}
+  - component: {fileID: -8165416090905219627}
   m_Layer: 0
   m_Name: Orange Ship
   m_TagString: Untagged
@@ -222,8 +223,20 @@ MonoBehaviour:
   hitPoints: 6
   deathVFX: {fileID: 3200836327345539236, guid: 4ea8d05610959723caded47fb579f160, type: 3}
   hitVFX: {fileID: 3200836327345539236, guid: c863f0dbc4480e8eebabc56dc6d1feaf, type: 3}
-  parent: {fileID: 0}
   timeToVfxDestroy: 2
+--- !u!65 &-8165416090905219627
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3308908762047509594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.491302, y: 2.8077502, z: 10.850525}
+  m_Center: {x: 0, y: -0.0000056624413, z: 0.0000011920929}
 --- !u!1 &3308925196260437562
 GameObject:
   m_ObjectHideFlags: 0
